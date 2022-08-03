@@ -22,6 +22,7 @@ public class Main {
 		}
 		
 		//M번 입력받고, 입력 받은 숫자의 범위만큼 배열에서 빼서 구함
+		//1~y까지 합 - 1~(x-1)까지 합 = x~y까지 합
 		for (int i = 0; i < M; i++) {
 			int x = in.nextInt();
 			int y = in.nextInt();
