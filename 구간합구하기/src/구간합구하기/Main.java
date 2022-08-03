@@ -21,7 +21,7 @@ public class Main {
 			arr[i] = arr[i - 1] + in.nextInt();
 		}
 		
-		//입력 받은 숫자의 범위만큼 배열에서 빼서 구함
+		//M번 입력받고, 입력 받은 숫자의 범위만큼 배열에서 빼서 구함
 		for (int i = 0; i < M; i++) {
 			int x = in.nextInt();
 			int y = in.nextInt();
