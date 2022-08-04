@@ -10,13 +10,13 @@ public class Solution {
 	public static void main(String[] args) throws Exception, IOException {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st;
 		StringBuilder sb = new StringBuilder();
 		
 		int n = Integer.parseInt(br.readLine());
 		int[] arr = new int[n];
-		st = new StringTokenizer(br.readLine(), " ");
+		StringTokenizer st;
 		
+		st = new StringTokenizer(br.readLine(), " ");
 		for (int i = 0; i < n; i++) 
 			arr[i] = Integer.parseInt(st.nextToken());
 		
@@ -24,6 +24,7 @@ public class Solution {
 		
 		for (int i = 0; i < k; i++) {
 			st = new StringTokenizer(br.readLine(), " ");
+			
 			int gender = Integer.parseInt(st.nextToken());
 			int num = Integer.parseInt(st.nextToken());
 			int l = arr.length;
