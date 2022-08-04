@@ -1,9 +1,9 @@
-package 구간합구하기;
+package com.ssafy.boj;
 
 import java.io.*;
 import java.util.Scanner;
 
-public class Main {
+public class 구간합구하기4 {
 
 	public static void main(String[] args) throws Exception, IOException {
 		
