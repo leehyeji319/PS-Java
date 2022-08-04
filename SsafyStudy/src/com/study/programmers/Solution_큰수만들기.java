@@ -10,7 +10,7 @@ public class Solution_큰수만들기 {
 	public static void main(String[] args) {
 		
 		String number = "4321";
-		int k = 1;
+		int k = 2;
 		System.out.println(solution(number, k));
 	}
 	
