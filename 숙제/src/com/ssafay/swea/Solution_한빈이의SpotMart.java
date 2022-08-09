@@ -37,6 +37,7 @@ public class Solution_한빈이의SpotMart {
 					start++;
 				}
 			}
+			if (answer == 0) answer = -1;
 			
 			System.out.println("#" + tc + " " + answer);
 		
