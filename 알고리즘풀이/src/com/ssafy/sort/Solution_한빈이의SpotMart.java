@@ -1,4 +1,4 @@
-package com.ssafay.swea;
+package com.ssafy.sort;
 
 import java.util.Arrays;
 import java.util.LinkedList;

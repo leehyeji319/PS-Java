@@ -1,4 +1,4 @@
-package com.ssafy.simulation;
+package com.ssafy.homeworkreview;
 
 import java.util.Iterator;
 import java.util.Stack;
