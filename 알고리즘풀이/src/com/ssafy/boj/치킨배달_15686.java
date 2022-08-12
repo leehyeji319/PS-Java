@@ -29,6 +29,7 @@ public class 치킨배달_15686 {
 				}
 			}
 		}
+		//미리 조합을 해놓고 돌려도 될듯 ??
 		int chickenSize = chicken.size();
 		int houseSize = house.size();
 		answer = new int[chickenSize][houseSize];
@@ -41,7 +42,7 @@ public class 치킨배달_15686 {
 				answer[c][h] = abs;
 			}
 		}
-		//배열 비교해서 
+		//이제 치킨이 집집마다 [[1,2,3,4], [2, 1, 3, 4], [6, 7, 1, 9]]
 	}
 
 }

@@ -2,7 +2,14 @@ package com.ssafy.swea;
 
 import java.util.*;
 import java.io.*;
-
+/*
+ * 이문제는 방문처리가 필요없다. 왜? 똑같은 번호가 아니라 방마다 번호가 다 다르기때문에 방문처리를 딱히 안해줘도 되지.
+ * - graph문제는 노드라 안하고 정점이라고 함. 이런문제의 인접정점은 갈수있는 방향이 인접정점이다.
+ * - 이런 그래프 문제를 풀 땐, 간선과 정점을 보고 확인해야함.
+ * - 얘는 간선이 네개이다. 왜? 상하좌우로 이동이 가능하니까.
+ * - 만약 지그재그로 들어온다면 최대 일억이 될수도잇어 최악엔, 그래서 memo를하는거임!! 재귀로..
+ * - 나는 갈수있는애를 그냥 태워보낸거고, 걔는 또 걔대로 출발하는거고. 이 결과를 메모를 해서 나한테 온 경우엔 +1만해주면 되는거임 .. 
+ * */
 public class 정사각형방 {
 	private static int N;
 	private static int[][] map;
@@ -13,7 +20,9 @@ public class 정사각형방 {
 	private static int start;
 
 	public static void main(String[] args) throws Exception, IOException {
-		System.setIn(new FileInputStream("res/square.txt"));
+		System.nanoTime();
+		System.setIn(new FileInputStream("res/square_teacher.txt"));
+//		System.setIn(new FileInputStream("res/square.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
 
@@ -31,6 +40,9 @@ public class 정사각형방 {
 					map[i][j] = Integer.parseInt(st.nextToken());
 				}
 			}
+			
+			//코드가 돌때 시작시간 찍고
+			long s = System.nanoTime();
 			for (int r = 0; r < N; r++) {
 				for (int c = 0; c < N; c++) {
 					answer = 0;
@@ -44,6 +56,8 @@ public class 정사각형방 {
 					}
 				}
 			}
+			//(코드완료시간 - 코드시작시간) / 나노니까 10^9 로 나눠주기
+			 System.out.println((System.nanoTime() - s) / Math.pow(10, 9));
 			System.out.println("#"+tc+" "+start+" "+(max + 1));
 		}
 	}
