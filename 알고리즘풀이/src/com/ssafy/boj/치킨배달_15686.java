@@ -3,10 +3,10 @@ package com.ssafy.boj;
 import java.util.*;
 import java.io.*;
 public class 치킨배달_15686 {
-	static ArrayList<int[]> house = new ArrayList<>();
-	static ArrayList<int[]> chicken = new ArrayList<>();
-	static ArrayList<int[]> chickenDistance = new ArrayList<>();
-	static int[][] answer;
+
+	static ArrayList<House> house = new ArrayList<>();
+	static ArrayList<Chicken> chicken = new ArrayList<>();
+	
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
@@ -22,27 +22,84 @@ public class 치킨배달_15686 {
 			for(int j = 0; j < N; j++) {
 				map[i][j] = Integer.parseInt(st.nextToken());
 				if (map[i][j] == 1) {
-					house.add(new int[] {i, j});
+					house.add(new House(i, j));
 				}
 				if (map[i][j] == 2) {
-					chicken.add(new int[] {i, j});
+					chicken.add(new Chicken(i, j));
 				}
 			}
 		}
-		//미리 조합을 해놓고 돌려도 될듯 ??
-		int chickenSize = chicken.size();
-		int houseSize = house.size();
-		answer = new int[chickenSize][houseSize];
-		//치킨집마다 집집거리넣어주기
-		for (int c = 0; c < chickenSize; c++) {
-			for (int h = 0; h < houseSize; h++) {
-				int[] tc = chicken.get(c);
-				int[] th = house.get(h);
-				int abs = Math.abs(tc[0] - th[0]) + Math.abs(tc[1] - th[1]);
-				answer[c][h] = abs;
-			}
-		}
-		//이제 치킨이 집집마다 answer = [[1,2,3,4], [2, 1, 3, 4], [6, 7, 1, 9]] answer[0]
+		System.out.println(getMinDistance(map, M));
+		
+	}
+	
+	public static int getMinDistance(int[][] map, int M) {
+		int size = chicken.size();
+		int[] p = new int[size];
+		int cnt = 0;
+		while(++cnt<=M) p[size -cnt] = 1;
+		
+		int min = Integer.MAX_VALUE;
+		do {
+			int sum = getChickenStreet(map, p);
+			if (min > sum) min = sum;
+		} while (np(p));
+		return min;
 	}
 
+	public static int getChickenStreet(int[][] map, int[] p) {
+		int sum = 0, temp = 0;
+		
+		for (int h = 0; h < house.size(); h++) {
+			int min = Integer.MAX_VALUE;
+			for (int c = 0; c < chicken.size(); c++) {
+				if (p[c] == 0) continue;
+				temp = Math.abs(house.get(h).hrow - chicken.get(c).crow) + Math.abs(house.get(h).hcol - chicken.get(c).ccol);
+				min = Math.min(min, temp);
+			}
+			sum += min;
+		}
+		return sum;
+	}
+	
+	
+	public static boolean np(int[] p) {
+		
+		int N = p.length;
+		int i=N-1;
+		while(i>0 && p[i-1]>=p[i]) --i;
+		if(i==0) return false;
+		
+		int j=N-1;
+		while(p[i-1]>=p[j]) --j;
+		
+		swap(p, i-1, j);
+		
+		int k=N-1;
+		while(i<k) swap(p,i++,k--);
+		
+		return true;
+	}
+	public static void swap(int[] numbers,int i, int j) {
+		int temp = numbers[i];
+		numbers[i] = numbers[j];
+		numbers[j] = temp;
+	}
+
+	
+	static class Chicken{
+		int crow, ccol;
+		public Chicken(int crow, int ccol) {
+			this.crow = crow;
+			this.ccol = ccol;
+		}
+	}
+	
+	static class House{
+		int hrow, hcol;
+		public House(int hrow, int hcol) {
+			this.hrow = hrow;
+			this.hcol = hcol;
+		}
+	}
 }
