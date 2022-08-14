@@ -1,4 +1,4 @@
-package com.study.programmers;
+package com.ssafy.programmers;
 
 import java.util.*;
 import java.io.*;
