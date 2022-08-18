@@ -29,11 +29,7 @@ public class 사냥꾼_8983 {
 			}
 		}
 		
-		int max = Integer.MIN_VALUE;
-		for (int i = 0; i < N; i++) {
-			int t = animals[i][0] + animals[i][1];
-			max = 
-		}
+		
 
 	}
 

@@ -5,11 +5,7 @@ import java.io.*;
 
 public class Z_1074 {
 
-	private static int visitedNum;
-	private static int[][] map;
-	private static int N, R, C;
-	private static int[] dr = { 0, 0, 1, 0 };
-	private static int[] dc = { 0, 1, -1, 1 };
+	private static int N, R, C, visitedNum;
 
 	public static void main(String[] args) throws Exception {
 
@@ -27,22 +23,25 @@ public class Z_1074 {
 		// 네갈죽
 		if (size == 1) {
 			System.out.println(visitedNum);
-			return;
 		}
 		int newSize = size / 2;
 
-		if (row < newSize && col < newSize) {
+		if (row < newSize && col < newSize) { //1
 			visitedNum += newSize * newSize * 0;
 			div(row, col, newSize);
-		} else if (row < newSize && col < newSize + newSize) {
+			
+		} else if (row < newSize && col < newSize + newSize) {//2
 			visitedNum += newSize * newSize * 1;
-			div(row, col, col - newSize);
-		} else if (row < newSize + newSize && col < newSize) {
+			div(row,  col - newSize, newSize);
+			
+		} else if (row < newSize + newSize && col < newSize) {//3
 			visitedNum += newSize * newSize * 2;
 			div(row - newSize, col, newSize);
-		} else if (row < newSize + newSize && col < newSize + newSize) {
+			
+		} else if (row < newSize + newSize && col < newSize + newSize) {//4
 			visitedNum += newSize * newSize * 3;
 			div(row - newSize, col - newSize, newSize);
+			
 		}
 		
 	}
