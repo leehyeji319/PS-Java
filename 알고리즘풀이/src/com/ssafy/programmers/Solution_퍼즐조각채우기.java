@@ -74,6 +74,7 @@ public class Solution_퍼즐조각채우기 {
 		return ret;
 	}
 
+	//테이블 90도 돌리기
 	public static int[][] rotate(int[][] table) {
 		int size = table.length;
 		int[][] rotateTable = new int[size][size];
