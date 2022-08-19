@@ -1,4 +1,4 @@
-package com.ssafy.live0811.bfs;
+package com.ssafy.live0811.bfs_np;
 
 import java.util.*;
 

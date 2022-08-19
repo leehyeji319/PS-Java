@@ -1,7 +1,7 @@
 package com.ssafy.live0804.exercise;
 
 import java.util.Scanner;
-
+//부분집합
 //n개의 수를 입력받고 가능한 모든 부분집합 생성
 public class SubsetTest {
 	
