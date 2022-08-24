@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class Solution_한빈이의SpotMart {
+public class SWEA_9229_한빈이의SpotMart {
 
 	public static void main(String[] args) {
 		

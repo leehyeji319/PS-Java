@@ -3,7 +3,7 @@ package com.ssafy.boj;
 import java.util.*;
 import java.io.*;
 
-public class 배열돌리기_16926 {
+public class BOJ_16926_배열돌리기 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

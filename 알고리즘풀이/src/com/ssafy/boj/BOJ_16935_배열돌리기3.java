@@ -3,7 +3,7 @@ package com.ssafy.boj;
 import java.util.*;
 import java.io.*;
 
-public class 배열돌리기3_16935 {
+public class BOJ_16935_배열돌리기3 {
 
 	private static int[][] arr;
 	private static int N, M;

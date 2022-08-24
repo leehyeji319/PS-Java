@@ -3,7 +3,7 @@ package com.ssafy.boj;
 import java.util.*;
 import java.io.*;
 
-public class 탑_2493 {
+public class BOJ_2493_탑 {
 
 	public static void main(String[] args) throws Exception, IOException {
 		//시간초과 잘생각해서

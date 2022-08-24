@@ -3,7 +3,7 @@ package com.ssafy.swea;
 import java.io.*;
 import java.util.*;
 
-class 파리퇴치 {
+class SWEA_2001_파리퇴치 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();

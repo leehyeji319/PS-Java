@@ -8,7 +8,7 @@ import java.io.OutputStreamWriter;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Solution_암호생성기_1225 {
+public class SWEA_1225_암호생성기 {
 
 	public static void main(String[] args) throws IOException {
 		int T = 10;

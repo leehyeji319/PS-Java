@@ -1,7 +1,7 @@
 package com.ssafy.boj;
 import java.util.*;
 
-public class 절대값힙_11286 {
+public class BOJ_11286_절대값힙 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		PriorityQueue<Numbers> h = new PriorityQueue<>();

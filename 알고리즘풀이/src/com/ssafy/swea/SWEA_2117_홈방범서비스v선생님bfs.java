@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
  *   	
  *  422ms
  */
-public class Solution_모의_2117_홈방범서비스_선생님bfs {
+public class SWEA_2117_홈방범서비스v선생님bfs {
 	static class Node {
 		int r, c;
 		

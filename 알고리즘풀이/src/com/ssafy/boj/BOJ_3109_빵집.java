@@ -3,7 +3,7 @@ package com.ssafy.boj;
 import java.util.*;
 import java.io.*;
 
-public class BOJ_빵집_3109 {
+public class BOJ_3109_빵집 {
 	static int R, C, answer;
 	static int[][] map;
 	static boolean[][] visited;

@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class Solution_암호문1 {
+public class SWEA_1228_암호문1 {
 	public static void main(String[] args) throws Exception, IOException {
 		
 		Scanner sc = new Scanner(System.in);

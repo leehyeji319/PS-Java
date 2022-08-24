@@ -11,7 +11,7 @@ import java.io.*;
  * - 나는 갈수있는애를 그냥 태워보낸거고, 걔는 또 걔대로 출발하는거고. 이 결과를 메모를 해서 나한테 온 경우엔 +1만해주면 되는거임 .. 
  * - 너비가 넓을때는 bfs하지말고, dfs가 좋은데, 큐를 쓸거면 우리가 11일 bfs2 size를 매 체크해서 너비를 돌려주는것처럼. 그걸 해줘
  * */
-public class 정사각형방 {
+public class SWEA_1861_정사각형방 {
 	private static int N;
 	private static int[][] map;
 	private static int[] dr = { -1, 1, 0, 0 }; // 상하좌우

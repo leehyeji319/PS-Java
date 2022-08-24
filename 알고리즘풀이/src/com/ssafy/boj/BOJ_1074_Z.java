@@ -3,7 +3,7 @@ package com.ssafy.boj;
 import java.util.*;
 import java.io.*;
 
-public class Z_1074 {
+public class BOJ_1074_Z {
 
 	private static int N, R, C, visitedNum;
 

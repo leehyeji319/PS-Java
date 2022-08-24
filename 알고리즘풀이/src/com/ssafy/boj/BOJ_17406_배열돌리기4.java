@@ -3,7 +3,7 @@ package com.ssafy.boj;
 import java.util.*;
 import java.io.*;
 
-public class 배열돌리기4_17406 {
+public class BOJ_17406_배열돌리기4 {
 	static int N, M, K, min, arr[][], rotation[][];
 	static int[] numbers;
 	static boolean[] isSelected;

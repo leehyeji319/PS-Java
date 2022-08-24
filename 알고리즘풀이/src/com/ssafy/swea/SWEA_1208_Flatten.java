@@ -2,7 +2,7 @@ package com.ssafy.swea;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Flatten {
+public class SWEA_1208_Flatten {
 	
 //	static int[] arr = new int[100];
 	public static void main(String[] args) {

@@ -1,7 +1,7 @@
 package com.ssafy.swea;
 import java.util.Scanner;
 
-public class 농작물수확하기 {
+public class SWEA_2805_농작물수확하기 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);

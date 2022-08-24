@@ -3,7 +3,7 @@ package com.ssafy.swea;
 import java.io.*;
 import java.util.*;
 
-public class 무선충전_5644 {
+public class SWEA_5644_무선충전 {
 	private static int[] dr = {0,-1, 0, 1, 0};
 	private static int[] dc = {0, 0, 1, 0, -1};
 	private static boolean[][] checked;

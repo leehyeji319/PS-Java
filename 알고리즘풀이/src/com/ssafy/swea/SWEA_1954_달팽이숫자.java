@@ -2,7 +2,7 @@ package com.ssafy.swea;
 
 import java.util.Scanner;
 
-public class 달팽이숫자 {
+public class SWEA_1954_달팽이숫자 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

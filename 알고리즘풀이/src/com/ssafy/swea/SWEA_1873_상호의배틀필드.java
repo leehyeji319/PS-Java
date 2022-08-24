@@ -3,7 +3,7 @@ package com.ssafy.swea;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class 상호의_배틀필드 {
+public class SWEA_1873_상호의배틀필드 {
 
 	public static void main(String[] args) throws Exception, IOException {
 

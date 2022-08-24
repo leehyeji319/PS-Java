@@ -2,7 +2,7 @@ package com.ssafy.boj;
 
 import java.util.*;
 import java.io.*;
-public class 치킨배달_15686 {
+public class BOJ_15686_치킨배달 {
 
 	static ArrayList<House> house = new ArrayList<>();
 	static ArrayList<Chicken> chicken = new ArrayList<>();

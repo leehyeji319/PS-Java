@@ -2,7 +2,7 @@ package com.ssafy.boj;
 
 import java.util.*;
 import java.io.*;
-public class 사냥꾼_8983 {
+public class BOJ_8983_사냥꾼 {
 
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

@@ -3,7 +3,7 @@ package com.ssafy.swea;
 import java.io.*;
 import java.util.*;
 
-public class SWEA_1247_최적경로v1 {
+public class SWEA_1247_최적경로 {
 	static int T, N, res;
 	static Point Office, Home, houses[];
 	static boolean[] visited;
@@ -73,3 +73,5 @@ public class SWEA_1247_최적경로v1 {
 		}
 	}
 }
+
+

@@ -1,10 +1,10 @@
-package com.ssafy.graph0811;
+package com.ssafy.swea;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class 미로2 {
+public class SWEA_1227_미로 {
 	static int[][] map;
 	static int[] dr = {-1, 1, 0, 0};
 	static int[] dc = {0, 0, -1, 1};

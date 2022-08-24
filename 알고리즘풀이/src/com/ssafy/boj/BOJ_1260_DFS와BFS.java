@@ -3,7 +3,7 @@ package com.ssafy.boj;
 import java.util.*;
 import java.io.*;
 
-public class BOJ_DFS와BFS_1260 {
+public class BOJ_1260_DFS와BFS {
 
 	static int[][] map;
 	static int N, M, V;

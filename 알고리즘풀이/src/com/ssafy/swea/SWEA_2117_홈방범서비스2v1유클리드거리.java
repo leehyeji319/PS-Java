@@ -28,7 +28,7 @@ class House{
         this.c=c;
     }
 }
-public class Solution_모의_2117_홈방범서비스2_유클리드거리 {
+public class SWEA_2117_홈방범서비스2v1유클리드거리 {
 	static int N, M, K;
     static int max;
     static ArrayList<House> house;

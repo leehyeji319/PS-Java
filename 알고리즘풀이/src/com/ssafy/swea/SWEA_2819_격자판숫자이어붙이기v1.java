@@ -6,7 +6,7 @@ import java.util.*;
 /*
  * 중복순열
  * */
-public class Swea_격자판숫자이어붙이기_2819_1 {
+public class SWEA_2819_격자판숫자이어붙이기v1 {
 	static int[] dr = { -1, 1, 0, 0 };
 	static int[] dc = { 0, 0, -1, 1 };
 	static int[][] map;

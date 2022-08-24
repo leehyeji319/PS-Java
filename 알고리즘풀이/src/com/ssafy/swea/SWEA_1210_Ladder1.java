@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Ladder1 {
+public class SWEA_1210_Ladder1 {
 	static final int T = 10;
 	static final int SIZE = 100;
 	
