@@ -3,13 +3,13 @@ package ClassPractice.live0929;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class DP1_Fibo_MemeTest {
+public class DP1_Fibo_MemoTest {
 
     static long[] calls1, calls2, memo;
     static long callCnt1, callCnt2;
     static int N;
 
-    static long fibo1(int n) {
+    static long fibo1(int n) { //메모하지 않는 버전
         callCnt1++; //수행횟수 누적
         calls1[n]++;
 
@@ -45,19 +45,19 @@ public class DP1_Fibo_MemeTest {
         memo[0] = 0;
         memo[1] = 1;
 
+        System.out.println("ans : " + fibo2(N));
+        System.out.println(callCnt2);
+        for (int i = 1; i <= N; i++) {
+            System.out.println("fibo2(" + i + ") : " + calls2[i]);
+        }
+        System.out.println("===========================");
+
         System.out.println("ans : " + fibo1(N));
         System.out.println(callCnt1);
         for (int i = 1; i <= N; i++) {
             System.out.println("fibo1(" + i + ") : " + calls1[i]);
         }
 
-        System.out.println("===========================");
-
-        System.out.println("ans : " + fibo2(N));
-        System.out.println(callCnt2);
-        for (int i = 1; i <= N; i++) {
-            System.out.println("fibo2(" + i + ") : " + calls2[i]);
-        }
         System.out.println("===========================");
     }
 }
