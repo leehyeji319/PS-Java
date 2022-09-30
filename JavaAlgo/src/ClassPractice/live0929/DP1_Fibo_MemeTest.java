@@ -45,7 +45,7 @@ public class DP1_Fibo_MemeTest {
         memo[0] = 0;
         memo[1] = 1;
 
-        System.out.println(fibo1(N));
+        System.out.println("ans : " + fibo1(N));
         System.out.println(callCnt1);
         for (int i = 1; i <= N; i++) {
             System.out.println("fibo1(" + i + ") : " + calls1[i]);
@@ -53,7 +53,7 @@ public class DP1_Fibo_MemeTest {
 
         System.out.println("===========================");
 
-        System.out.println(fibo2(N));
+        System.out.println("ans : " + fibo2(N));
         System.out.println(callCnt2);
         for (int i = 1; i <= N; i++) {
             System.out.println("fibo2(" + i + ") : " + calls2[i]);
