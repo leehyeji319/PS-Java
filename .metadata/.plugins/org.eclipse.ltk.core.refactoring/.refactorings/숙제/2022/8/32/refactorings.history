@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.ssafy.boj&apos; to &apos;오프라인수업/src&apos;&#x0A;- Original project: &apos;숙제&apos;&#x0A;- Destination element: &apos;오프라인수업/src&apos;&#x0A;- Original element: &apos;숙제/src/com.ssafy.boj&apos;" description="Copy package" destination="=오프라인수업/src" element1="/src&lt;com.ssafy.boj" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1659577065285" version="1.0"/>
+</session>

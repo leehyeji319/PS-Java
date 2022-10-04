@@ -1,0 +1,12 @@
+package com.ssafy.swea;
+
+/*
+ * 중복순열
+ * */
+public class Swea_격자판숫자이어붙이기_2819_1 {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

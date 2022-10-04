@@ -1,0 +1,34 @@
+package com.ssafy.live0822.disjointSet;
+
+public class KruskalTest {
+	
+	static class Edge implements Comparable<Edge> {
+		int from, to, weight;
+		
+		public Edge(int from, int to, int weight) {
+			super();
+			this.from = from;
+			this.to = to;
+			this.weight = weight;
+		}
+
+		@Override
+		public int compareTo(Edge o) {
+//			return Integer.compare(this.weight, o.weight);
+			
+			return this.weight - o.weight;
+		}
+		
+		
+	}
+	
+	static int[] parents;
+	static int V, E;
+	static Edge[] edgeList; //간선 리스트
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

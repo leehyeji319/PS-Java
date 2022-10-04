@@ -1,0 +1,17 @@
+package com.ssafy.swea;
+import java.io.*;
+import java.util.*;
+/*
+ * 중복순열
+ * */
+public class Swea_격자판숫자이어붙이기_2819_1 {
+	static int[] dr = {-1, 1, 0, 0};
+	static int[] dc = {0, 0, -1, 1};
+	static int[][] map;
+	static HashSet<Integer> set;
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

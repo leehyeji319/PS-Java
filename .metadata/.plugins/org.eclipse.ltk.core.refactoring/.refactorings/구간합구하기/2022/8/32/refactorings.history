@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;구간합구하기&apos; to &apos;오프라인수업/src/com.ssafy.boj&apos;&#x0A;- Original project: &apos;구간합구하기&apos;&#x0A;- Destination element: &apos;오프라인수업/src/com.ssafy.boj&apos;&#x0A;- Original element: &apos;구간합구하기/src/구간합구하기&apos;&#x0A;- Update references to refactored element" description="Move package" destination="=오프라인수업/src&lt;com.ssafy.boj" element1="/src&lt;구간합구하기" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1659577128818" version="1.0"/>
+</session>
