@@ -10,6 +10,7 @@ public class BOJ_2580_스도쿠_T_bitmasking {
     static int map[][];
     static int[] row, col, squ[];
     static ArrayList<int[]> list;
+
     public static void main(String[] args) throws IOException {
         //행열을 관리하는 1차원 boolean 배열을 -> 비트마스킹을 사용해서 정수하나로 관리
 
@@ -23,16 +24,16 @@ public class BOJ_2580_스도쿠_T_bitmasking {
         int no = 0;
         for (int i = 0; i < N; i++) {
             char[] line = br.readLine().trim().toCharArray();
-            for (int j = 0; j <N; j++) {
+            for (int j = 0; j < N; j++) {
                 no = map[i][j] = line[j] - '0';
                 if (no == 0) {
-                    list.add(new int[] {i,j});
+                    list.add(new int[]{i, j});
                     continue;
                 }
                 //비어있지 않은 칸들은 자신이 속해있는 행렬박스에 비트 합치는 처리해줌
-                row[i] |= 1<<no;
-                col[j] |= 1<<no;
-                squ[i/3][j/3] |= 1<<no;
+                row[i] |= 1 << no;
+                col[j] |= 1 << no;
+                squ[i / 3][j / 3] |= 1 << no;
             }
         }
         go(0);
@@ -52,17 +53,17 @@ public class BOJ_2580_스도쿠_T_bitmasking {
         int c = temp[1];
 
         for (int i = 0; i <= N; i++) {
-            if((row[r] & (1 <<i)) != 0 || (col[c]&(1<<i)) != 0 || (squ[r/3][c/3]&(1<<i)) != 0) continue;
+            if ((row[r] & (1 << i)) != 0 || (col[c] & (1 << i)) != 0 || (squ[r / 3][c / 3] & (1 << i)) != 0) continue;
             map[r][c] = i;
-            row[r] |= 1<<i;
-            col[c] |= 1<<i;
-            squ[r/3][c/3] |= 1<<i;
-            if(go(index + 1)) return true;
+            row[r] |= 1 << i;
+            col[c] |= 1 << i;
+            squ[r / 3][c / 3] |= 1 << i;
+            if (go(index + 1)) return true;
             //return되지 않고 내려오는 경우 ->
             map[r][c] = 0;
-            row[r] &= ~(1<<i);
-            col[c] &= ~(1<<i);
-            squ[r/3][c/3] &= ~(1<<i);
+            row[r] &= ~(1 << i);
+            col[c] &= ~(1 << i);
+            squ[r / 3][c / 3] &= ~(1 << i);
         }
         return false;
     }
