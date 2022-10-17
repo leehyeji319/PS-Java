@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
+//union find 활용
 public class KruskalTest {
 
 	static class Edge implements Comparable<Edge> {
